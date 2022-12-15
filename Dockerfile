@@ -7,6 +7,6 @@ LABEL "repository"="https://github.com/ghastore/api-obs"
 LABEL "homepage"="https://github.com/ghastore"
 
 COPY *.sh /
-RUN apk add --no-cache bash curl git git-lfs jq
+RUN apk add --no-cache bash curl git git-lfs jq yq
 
 ENTRYPOINT ["/entrypoint.sh"]
